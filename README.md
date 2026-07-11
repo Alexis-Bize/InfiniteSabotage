@@ -1,6 +1,6 @@
 # InfiniteSabotage
 
-![Third Person Mod](/assets/assets/third-person.jpg)
+![Third Person Mod](/assets/third-person.jpg)
 
 The first Halo Infinite Campaign mod that requires nothing more than a simple text editor.
 
