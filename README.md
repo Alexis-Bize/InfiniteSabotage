@@ -6,7 +6,7 @@ The first Halo Infinite Campaign mod that requires nothing more than a simple te
 
 ## Installation
 
-* Download the latest release.
+* Download the latest release, or download the files in the [`build`](/build) directory.
 * Navigate to your Halo Infinite installation directory (Steam).
 * Open `/subgames/CampaignS1/__cms__/managed/OlympusCampaign`.
 * Make a backup of the existing files.
