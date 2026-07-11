@@ -1,6 +1,6 @@
 # InfiniteSabotage
 
-![Third Person Mod](/assets/third-person-1.jpg)
+![Third Person Mod](/assets/third-person-2.jpg)
 
 The first Halo Infinite Campaign mod that requires nothing more than a simple text editor.
 
@@ -65,7 +65,7 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 ### Scale
 
-![Laurette Agryna](/assets/spartan-laurette-agryna.jpg)
+![Laurette Agryna](/assets/spartan-tiny.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -73,7 +73,7 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 ### Camera
 
-![Third Person Mod](/assets/third-person-2.jpg)
+![Third Person Mod](/assets/third-person-1.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
