@@ -1,6 +1,6 @@
 # InfiniteSabotage
 
-![Third Person Mod](/assets/third-person.jpg)
+![Third Person Mod](/assets/third-person-1.jpg)
 
 The first Halo Infinite Campaign mod that requires nothing more than a simple text editor.
 
@@ -29,6 +29,8 @@ All options live in `sabotage.cfg` as a single Lua table. Below is every field, 
 
 ### Cheats
 
+![No Clip Mod](/assets/no-clip-1.jpg)
+
 | Option | Type | Default | Description |
 |---|---|---|---|
 | `cheat_godMode` | boolean | `false` | Makes players immune to death and damage. |
@@ -38,6 +40,8 @@ All options live in `sabotage.cfg` as a single Lua table. Below is every field, 
 **Edge case:** `cheat_noClip` and several other systems (hologram color, creature attachment) touch physics state directly. If NoClip is on, those systems respect it rather than fighting it — you shouldn't get your physics silently re-enabled by an unrelated setting.
 
 ### Narrative
+
+![Legendary Ending](/assets/narrative-play.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -50,6 +54,8 @@ All options live in `sabotage.cfg` as a single Lua table. Below is every field, 
 
 ### Customization
 
+![Laurette Agryna](/assets/spartan-laurette-agryna.jpg)
+
 | Option | Type | Default | Description |
 |---|---|---|---|
 | `customization_armorVariant` | string | `""` | Applies an armor variant. See the list of valid keys below. Leave empty for default armor. |
@@ -59,11 +65,15 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 ### Scale
 
+![Laurette Agryna](/assets/spartan-laurette-agryna.jpg)
+
 | Option | Type | Default | Description |
 |---|---|---|---|
 | `scale_player` | number | `1` | Player model scale. Values below `0.01` are clamped up to `0.01`. |
 
 ### Camera
+
+![Third Person Mod](/assets/third-person-2.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -76,12 +86,16 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 ### AI
 
+![Friendly Elite](/assets/ai-elite-friend.jpg)
+
 | Option | Type | Default | Description |
 |---|---|---|---|
 | `ai_killAll` | boolean | `false` | Continuously kills all AI in the zone while set to `true` — this runs on every tick, not just once, so leaving it enabled will also kill any AI that spawns or enters afterward. Set back to `false` once you're done. |
 | `ai_friendlyEnemies` | boolean | `false` | Makes enemy factions (Brutes, Forerunners, Covenant) friendly toward the player. |
 
 ### Teleport
+
+![Machinima Mode](/assets/machima-teleport-coordinate.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -91,6 +105,8 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 **Finding coordinates:** use Flycam (see the FAQ below) to fly to the spot you want, then hold **X** and press **D-Pad Right** to display the camera's current coordinate vector on screen. Copy those values into `teleport_locationVector`.
 
 ### Skirmish
+
+![Creature Mod](/assets/creature-warthog.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
