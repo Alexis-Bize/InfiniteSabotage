@@ -69,7 +69,7 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 ### Scale
 
-| ![Small boi](/assets/spartan-tiny.jpg) | ![Big boi]/assets/spartan-giant.jpg) | 
+| ![Small boi](/assets/spartan-tiny.jpg) | ![Big boi](/assets/spartan-giant.jpg) | 
 |---|---|
 
 | Option | Type | Default | Description |
