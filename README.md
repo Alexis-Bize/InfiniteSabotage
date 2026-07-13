@@ -124,9 +124,9 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 | Option | Type | Default | Description |
 |---|---|---|---|
+| `skirmish_replaceSentinelBeamWithJudgmentRayGun` | boolean | `false` | The next time you pick up a Sentinel Beam, it's swapped for the Judgment Ray Gun instead. |
 | `skirmish_creatureGameplay` | boolean | `false` | Transforms the player into a random creature currently detected in the active zone, with a matching third-person camera. |
 | `skirmish_creatureScale` | number | `1` | Scale applied to the transformed creature. Clamped to a minimum floor internally to avoid degenerate sizes. |
-| `skirmish_replaceSentinelBeamWithJudgmentRayGun` | boolean | `false` | The next time you pick up a Sentinel Beam, it's swapped for the Judgment Ray Gun instead. |
 
 **Edge case — no creature available:** if no creature is present in the zone (or one can't be spawned) when `skirmish_creatureGameplay` is set to `true`, the mod keeps retrying automatically every tick until a creature becomes available, rather than failing silently or permanently. You don't need to toggle it off and on again — just wait for a valid creature to be nearby.
 
