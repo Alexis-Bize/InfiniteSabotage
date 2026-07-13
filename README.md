@@ -119,7 +119,8 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 
 ### Skirmish
 
-![Creature Mod](/assets/creature-warthog.jpg)
+| ![Judgment Ray Gun](/skirmish-judgment-ray-gun.jpg) | ![Creature Mod](/assets/creature-warthog.jpg) | 
+|---|---|
 
 | Option | Type | Default | Description |
 |---|---|---|---|
