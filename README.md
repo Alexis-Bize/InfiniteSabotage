@@ -58,7 +58,8 @@ All options live in `sabotage.cfg` as a single Lua table. Below is every field, 
 
 ### Customization
 
-![Laurette Agryna](/assets/spartan-laurette-agryna.jpg)
+| ![Laurette Agryna](/assets/spartan-laurette-agryna.jpg) | ![Samurai](/assets/samurai-gameplay-1.jpg) | 
+|---|---|
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -85,7 +86,7 @@ Valid `customization_deathFX` keys: `GruntBirthdayParty`.
 
 ### Camera
 
-![Third Person Mod](/assets/third-person-1.jpg)
+![Third Person Mod](/assets/third-person-2.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -126,6 +127,8 @@ Valid `customization_deathFX` keys: `GruntBirthdayParty`.
 | `checkpoint_loadTrigger` | number | `0` | Reverts to the last checkpoint. Same trigger behavior as above: change the number to fire it. |
 
 ### Vehicle
+
+![Pelican](/assets/pelican.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
