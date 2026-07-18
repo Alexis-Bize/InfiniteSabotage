@@ -14,6 +14,9 @@
 ### Improved
 - Optimized the mod's overall bundle size.
 
+### Compatibility
+- Originally designed and tested against the Steam version of Halo Infinite, but confirmed to also work on the Xbox PC app version.
+
 ## 0.2.0
 
 ### Fixed
