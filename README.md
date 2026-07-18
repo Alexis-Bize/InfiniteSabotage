@@ -1,13 +1,13 @@
 # InfiniteSabotage
 
-![Third Person Mod](/assets/third-person-2.jpg)
+![Third Person Mod](/assets/samurai-the-weapon.jpg)
 
 The first Halo Infinite Campaign mod that requires nothing more than a simple text editor.
 
 ## Installation
 
 * Download the latest release, or download the files in the [`build`](/build) directory.
-* Navigate to your Halo Infinite installation directory (Steam).
+* Navigate to your Halo Infinite installation directory (Steam or the Xbox PC app).
 * Open `/subgames/CampaignS1/__cms__/managed/OlympusCampaign`.
 * Make a backup of the existing files.
 * Copy `Easy.bin` and `sabotage.cfg` into this folder.
@@ -58,14 +58,20 @@ All options live in `sabotage.cfg` as a single Lua table. Below is every field, 
 
 ### Customization
 
-![Laurette Agryna](/assets/spartan-laurette-agryna.jpg)
+| ![Laurette Agryna](/assets/spartan-laurette-agryna.jpg) | ![Samurai - Grunt Birthday Party Death FX](/assets/deathfx-1.jpg) | 
+|---|---|
 
 | Option | Type | Default | Description |
 |---|---|---|---|
 | `customization_armorVariant` | string | `""` | Applies an armor variant. See the list of valid keys below. Leave empty for default armor. |
 | `customization_hologramColor` | string | `""` | Applies a hologram preview color. Valid values: `"Red"`, `"Blue"`, `"Gold"`. Leave empty to disable. |
+| `customization_deathFX` | string | `""` | Applies a custom visual effect on death. See the list of valid keys below. Leave empty to disable. |
 
-Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan02`, `Spartan03`, `Spartan04`, `Spartan05`, `Spartan06`.
+Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan02`, `Spartan03`, `Spartan04`, `Spartan05`, `Spartan06`, `Samurai`.
+
+Valid `customization_deathFX` keys: `GruntBirthdayParty`.
+
+**Edge case — hologram color and invulnerability:** enabling `customization_hologramColor` makes the player effectively deathless while active, as a side effect of the hologram preview state itself — this isn't a separate toggle, it's inherent to how the hologram effect works. Keep this in mind if you're relying on `cheat_deathless` being `false` for a specific setup.
 
 ### Scale
 
@@ -76,9 +82,11 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 |---|---|---|---|
 | `scale_player` | number | `1` | Player model scale. Values below `0.01` are clamped up to `0.01`. |
 
+**Edge case — movement speed:** as your scale moves away from `1`, movement speed and jump height scale proportionally with it — a bigger player moves faster and jumps a bit higher, a smaller player moves slower, relative to how far the scale is from the default.
+
 ### Camera
 
-![Third Person Mod](/assets/third-person-1.jpg)
+![Third Person Mod](/assets/third-person-2.jpg)
 
 | Option | Type | Default | Description |
 |---|---|---|---|
@@ -117,6 +125,20 @@ Valid `customization_armorVariant` keys: `LauretteAgryna`, `Spartan01`, `Spartan
 |---|---|---|---|
 | `checkpoint_saveTrigger` | number | `0` | Forces a checkpoint save. Change this number to any new value to trigger a save — the number itself doesn't matter, only that it's different from before. |
 | `checkpoint_loadTrigger` | number | `0` | Reverts to the last checkpoint. Same trigger behavior as above: change the number to fire it. |
+
+### Vehicle
+
+![Pelican](/assets/pelican.jpg)
+
+| Option | Type | Default | Description |
+|---|---|---|---|
+| `vehicle_teleportIntoVehicle` | string | `""` | Spawns the specified vehicle and teleports you directly into it. See the list of valid keys below. Leave empty for none. |
+
+Valid `vehicle_teleportIntoVehicle` keys: `Pelican`, `Phantom`.
+
+**Edge case — switching or clearing a vehicle:** changing this to a different vehicle (or back to empty) destroys your currently spawned vehicle first, then spawns the new one if applicable — you won't end up with two vehicles at once.
+
+**Edge case — vehicle unavailable:** if the vehicle can't be created for some reason, the mod keeps retrying automatically every tick until it succeeds, the same way `skirmish_creatureGameplay` does below — no need to toggle it off and on again.
 
 ### Skirmish
 
