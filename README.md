@@ -1,13 +1,13 @@
 # InfiniteSabotage
 
-![Third Person Mod](/assets/third-person-2.jpg)
+![Third Person Mod](/assets/samurai-the-weapon.jpg)
 
 The first Halo Infinite Campaign mod that requires nothing more than a simple text editor.
 
 ## Installation
 
 * Download the latest release, or download the files in the [`build`](/build) directory.
-* Navigate to your Halo Infinite installation directory (Steam or the Xbox PC app — the mod was originally designed and tested against the Steam version, but has been confirmed to also work on the Xbox PC app).
+* Navigate to your Halo Infinite installation directory (Steam or the Xbox PC app).
 * Open `/subgames/CampaignS1/__cms__/managed/OlympusCampaign`.
 * Make a backup of the existing files.
 * Copy `Easy.bin` and `sabotage.cfg` into this folder.
