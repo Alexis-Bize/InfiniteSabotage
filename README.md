@@ -58,7 +58,7 @@ All options live in `sabotage.cfg` as a single Lua table. Below is every field, 
 
 ### Customization
 
-| ![Laurette Agryna](/assets/spartan-laurette-agryna.jpg) | ![Samurai](/assets/samurai-gameplay-1.jpg) | 
+| ![Laurette Agryna](/assets/spartan-laurette-agryna.jpg) | ![Samurai - Grunt Birthday Party Death FX](/assets/deathfx-1.jpg) | 
 |---|---|
 
 | Option | Type | Default | Description |
